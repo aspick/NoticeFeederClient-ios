@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/aspick/NoticeFeederClient'
+  s.homepage         = 'https://github.com/aspick/NoticeFeederClient-ios'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'aspick' => 'yugo@18th-lab.com' }
-  s.source           = { :git => 'https://github.com/aspick/NoticeFeederClient.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/aspick/NoticeFeederClient-ios.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
