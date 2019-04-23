@@ -31,7 +31,7 @@
 		14598D7FACF3352840C575A5 /* Pods-NoticeFeederClient_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoticeFeederClient_Example.release.xcconfig"; path = "Target Support Files/Pods-NoticeFeederClient_Example/Pods-NoticeFeederClient_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1F23D50828456820E90CEA94 /* Pods-NoticeFeederClient_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoticeFeederClient_Example.debug.xcconfig"; path = "Target Support Files/Pods-NoticeFeederClient_Example/Pods-NoticeFeederClient_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		28412FEFD5BCD443804641DD /* Pods-NoticeFeederClient_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoticeFeederClient_Tests.release.xcconfig"; path = "Target Support Files/Pods-NoticeFeederClient_Tests/Pods-NoticeFeederClient_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		316C80B1F31F8B6A195CDA76 /* NoticeFeederClient.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = NoticeFeederClient.podspec; path = ../NoticeFeederClient.podspec; sourceTree = "<group>"; };
+		316C80B1F31F8B6A195CDA76 /* NoticeFeederClient.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = NoticeFeederClient.podspec; path = ../NoticeFeederClient.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		54FF43CB5572862DD1666890 /* Pods_NoticeFeederClient_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoticeFeederClient_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* NoticeFeederClient_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoticeFeederClient_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,8 +44,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6BCA9AFD73D267FFAA007840 /* Pods-NoticeFeederClient_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoticeFeederClient_Tests.debug.xcconfig"; path = "Target Support Files/Pods-NoticeFeederClient_Tests/Pods-NoticeFeederClient_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6C81EAFCCC4D2BD10B725941 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		74AEC80565D3144578B983E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6C81EAFCCC4D2BD10B725941 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		74AEC80565D3144578B983E5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		ACA821659A58B55B63D2BBA6 /* Pods_NoticeFeederClient_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoticeFeederClient_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				6BCA9AFD73D267FFAA007840 /* Pods-NoticeFeederClient_Tests.debug.xcconfig */,
 				28412FEFD5BCD443804641DD /* Pods-NoticeFeederClient_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -513,7 +513,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -528,7 +528,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

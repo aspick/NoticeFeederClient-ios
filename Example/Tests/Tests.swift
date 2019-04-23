@@ -2,47 +2,25 @@
 
 import Quick
 import Nimble
-import NoticeFeederClient
+@testable import NoticeFeederClient
 
-class TableOfContentsSpec: QuickSpec {
+class NoticeSpec: QuickSpec {
     override func spec() {
-        describe("these will fail") {
-
-            it("can do maths") {
-                expect(1) == 2
-            }
-
-            it("can read") {
-                expect("number") == "string"
-            }
-
-            it("will eventually fail") {
-                expect("time").toEventually( equal("done") )
-            }
-            
-            context("these will pass") {
-
-                it("can do maths") {
-                    expect(23) == 23
-                }
-
-                it("can read") {
-                    expect("🐮") == "🐮"
-                }
-
-                it("will eventually pass") {
-                    var time = "passing"
-
-                    DispatchQueue.main.async {
-                        time = "done"
-                    }
-
-                    waitUntil { done in
-                        Thread.sleep(forTimeInterval: 0.5)
-                        expect(time) == "done"
-
-                        done()
-                    }
+        describe("verifyTarget") {
+            [
+                ["1", "1.1", true],
+                ["1.1", "1.1", true],
+                ["1.1", "1.2", false],
+                ["1.3", "1.2", false],
+                ["1.2", "1.2.1", true],
+                ["1.2.0", "1.2.1", false],
+            ].forEach { (row) in
+                it("target: \(row[0]), current: \(row[1]) should return: \(row[2])") {
+                    let target = row[0] as! String
+                    let current = row[1] as! String
+                    let actual = Notice.verifyTarget(target: target, current: current)
+                    let expected = row[2] as? Bool
+                    expect(actual) == expected
                 }
             }
         }
